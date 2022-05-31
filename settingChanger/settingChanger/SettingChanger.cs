@@ -5,47 +5,52 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
+
 namespace settingChanger
 {
     class SettingChanger
     {
-        static void Main()
+        /*public static void changeBaseEditor(string directory) // searching directory ver
         {
-            changeSetting();
-            deleteFolder();
-            
-        }
+            string sourceDirectory = Directory.GetCurrentDirectory();
+            string[] files = Directory.GetDirectories(@"C:\");
+            foreach (string file in files)
+            {
+                Console.WriteLine(file);
+            }
+        }*/
 
-        public static void changeSetting()
+        public static bool changeBaseEditor(string directory)
         {
-            string sourceDirectory = @"C:\Users\Bmo\Documents\github\VLAST\settingChanger\settingChanger\Debug\net6.0\testTrue.txt";
-            //string sourceDirectory = @"C:\Users\Bmo\Documents\github\VLAST\settingChanger\settingChanger\Debug\net6.0\testFalse.txt"; // For test
-
-            //@"C:\Program Files\Epic Games\UE_5.0\Engine\Config\BaseEditorPerProjectUserSettings.txt" // For " UE_5.0 "
-            System.IO.StreamReader sr = new StreamReader(sourceDirectory);
-            string text = sr.ReadToEnd();
-            int idx = text.IndexOf("bSCCAutoAddNewFiles=True");
+            string sourceDirectory = directory;
+            StreamReader? sr;
+            if ((sr = DirectoryChecker.checkDirectoryOrNull(directory)) == null)
+            {
+                return false;
+            }
+            string fileContents = sr.ReadToEnd();
+            int idx = fileContents.IndexOf("bSCCAutoAddNewFiles=True");
             if (idx == -1)
             {
-                Console.WriteLine("Already \"False\"");
-                return;
+                return true;
             }
             idx += 20;
-            char[] chars = text.ToCharArray();
+            char[] chars = fileContents.ToCharArray();
             chars[idx++] = 'F';
             chars[idx++] = 'a';
             chars[idx++] = 'l';
             chars[idx++] = 's';
-            text = new string(chars).Insert(idx, "e");
-            File.WriteAllText(@"C:\Users\Bmo\Documents\github\VLAST\settingChanger\settingChanger\Debug\net6.0\new.txt", text);
-            Console.WriteLine("Changed successfully");
+            fileContents = new string(chars).Insert(idx, "e");
+            File.WriteAllText(@"C:\Users\Bmo\Documents\github\VLAST\settingChanger\settingChanger\test1\new.txt", fileContents);
+            return true;
         }
 
-        public static void deleteFolder()
+        public static bool changeEditor()
         {
-            string directory = Directory.GetCurrentDirectory() + @"\test"; // For test
-            // string directory = Directory.GetCurrentDirectory() + @"Saved";
-            Directory.Delete(directory, true);
+            string directory = Directory.GetCurrentDirectory() + @"\test.text"; // For test
+            // string directory = Directory.GetCurrentDirectory() + @"\EditorPerProjectUserSettings.ini"
+
+            return true;
         }
     }
 }
