@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <BaseOutputPath>C:\Users\Bmo\Documents\github\VLAST\settingChanger\settingChanger</BaseOutputPath>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -17,7 +18,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="DirectoryChecker.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="SettingChanger.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="app.manifest" />
   </ItemGroup>
 
 </Project>

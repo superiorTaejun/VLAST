@@ -10,29 +10,14 @@ namespace settingChanger
 {
     class SettingChanger
     {
-        /*public static void changeBaseEditor(string directory) // searching directory ver
+        public static string settingFalse(StreamReader sr)
         {
-            string sourceDirectory = Directory.GetCurrentDirectory();
-            string[] files = Directory.GetDirectories(@"C:\");
-            foreach (string file in files)
-            {
-                Console.WriteLine(file);
-            }
-        }*/
-
-        public static bool changeBaseEditor(string directory)
-        {
-            string sourceDirectory = directory;
-            StreamReader? sr;
-            if ((sr = DirectoryChecker.checkDirectoryOrNull(directory)) == null)
-            {
-                return false;
-            }
             string fileContents = sr.ReadToEnd();
+
             int idx = fileContents.IndexOf("bSCCAutoAddNewFiles=True");
             if (idx == -1)
             {
-                return true;
+                return fileContents;
             }
             idx += 20;
             char[] chars = fileContents.ToCharArray();
@@ -41,14 +26,40 @@ namespace settingChanger
             chars[idx++] = 'l';
             chars[idx++] = 's';
             fileContents = new string(chars).Insert(idx, "e");
-            File.WriteAllText(@"C:\Users\Bmo\Documents\github\VLAST\settingChanger\settingChanger\test1\new.txt", fileContents);
+
+            return fileContents;
+        }
+
+        public static bool changeBaseEditor(string directory)
+        {
+            StreamReader? sr;
+            if ((sr = DirectoryChecker.checkDirectoryOrNull(directory)) == null)
+            {
+                return false;
+            }
+            string fileContents = settingFalse(sr);
+            File.WriteAllText(directory, fileContents);
+
             return true;
         }
 
-        public static bool changeEditor()
+        public static bool changeEditor(string directory)
         {
-            string directory = Directory.GetCurrentDirectory() + @"\test.text"; // For test
-            // string directory = Directory.GetCurrentDirectory() + @"\EditorPerProjectUserSettings.ini"
+            StreamReader? sr;
+            if ((sr = DirectoryChecker.checkDirectoryOrNull(directory)) == null)
+            {
+                return false;
+            }
+            string fileContents = sr.ReadToEnd();
+            if (fileContents.Contains("bSCCAutoAddNewFiles=") == false) {
+                int idx = fileContents.IndexOf("UnrealEd.EditorLoadingSavingSettings]") + 37;
+                fileContents = fileContents.Insert(idx, "\r\nbSCCAutoAddNewFiles=False");
+                File.WriteAllText(directory, fileContents);
+
+                return true;
+            }
+            fileContents = settingFalse(sr);
+            File.WriteAllText(directory, fileContents);
 
             return true;
         }
