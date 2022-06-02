@@ -1,65 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+﻿using System.Text;
 
+using System.Runtime.InteropServices;
 
 namespace settingChanger
 {
     class SettingChanger
     {
-        public static string settingFalse(StreamReader sr)
+        [DllImport("kernel32")]
+        static extern long WritePrivateProfileString(string section, string key, string val, string filePath);
+        [DllImport("kernel32")]
+        static extern int GetPrivateProfileString(string section, string key, string def, StringBuilder retVal, int size, string filePath);
+        public static bool changeSetting(string path)
         {
-            string fileContents = sr.ReadToEnd();
-
-            int idx = fileContents.IndexOf("bSCCAutoAddNewFiles=True");
-            if (idx == -1)
-            {
-                return fileContents;
-            }
-            idx += 20;
-            char[] chars = fileContents.ToCharArray();
-            chars[idx++] = 'F';
-            chars[idx++] = 'a';
-            chars[idx++] = 'l';
-            chars[idx++] = 's';
-            fileContents = new string(chars).Insert(idx, "e");
-
-            return fileContents;
-        }
-
-        public static bool changeBaseEditor(string directory)
-        {
-            StreamReader? sr;
-            if ((sr = DirectoryChecker.checkDirectoryOrNull(directory)) == null)
+            if (!File.Exists(path))
             {
                 return false;
             }
-            string fileContents = settingFalse(sr);
-            File.WriteAllText(directory, fileContents);
-
-            return true;
-        }
-
-        public static bool changeEditor(string directory)
-        {
-            StreamReader? sr;
-            if ((sr = DirectoryChecker.checkDirectoryOrNull(directory)) == null)
+            Console.WriteLine(Path.GetFileName(path));
+            if (Path.GetFileName(path) == "BaseEditorPerProjectUserSettings.ini" || Path.GetFileName(path) == "EditorPerProjectUserSettings.ini")
+            {
+                WritePrivateProfileString("/Script/UnrealEd.EditorLoadingSavingSettings", "bSCCAutoAddNewFiles", "False", path);
+            } else
             {
                 return false;
             }
-            string fileContents = sr.ReadToEnd();
-            if (fileContents.Contains("bSCCAutoAddNewFiles=") == false) {
-                int idx = fileContents.IndexOf("UnrealEd.EditorLoadingSavingSettings]") + 37;
-                fileContents = fileContents.Insert(idx, "\r\nbSCCAutoAddNewFiles=False");
-                File.WriteAllText(directory, fileContents);
-
-                return true;
-            }
-            fileContents = settingFalse(sr);
-            File.WriteAllText(directory, fileContents);
 
             return true;
         }

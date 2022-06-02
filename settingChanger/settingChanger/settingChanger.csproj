@@ -18,8 +18,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="DirectoryChecker.cs" />
-    <Compile Include="Ini.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="SettingChanger.cs" />
   </ItemGroup>
