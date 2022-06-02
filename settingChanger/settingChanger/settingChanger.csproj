@@ -2,11 +2,12 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <BaseOutputPath>C:\Users\Bmo\Documents\github\VLAST\settingChanger\settingChanger</BaseOutputPath>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject></StartupObject>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -18,6 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Ini.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="SettingChanger.cs" />
   </ItemGroup>
