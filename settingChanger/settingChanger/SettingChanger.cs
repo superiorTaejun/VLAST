@@ -16,7 +16,6 @@ namespace settingChanger
             {
                 return false;
             }
-            Console.WriteLine(Path.GetFileName(path));
             if (Path.GetFileName(path) == "BaseEditorPerProjectUserSettings.ini" || Path.GetFileName(path) == "EditorPerProjectUserSettings.ini")
             {
                 WritePrivateProfileString("/Script/UnrealEd.EditorLoadingSavingSettings", "bSCCAutoAddNewFiles", "False", path);
