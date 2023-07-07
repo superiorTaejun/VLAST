@@ -1,0 +1,2 @@
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\bin\Release\net5.0\publish\win-x86\CloudSystemMaintenance.pdb
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\bin\Release\net5.0\publish\win-x86\CloudSystemMaintenance.exe

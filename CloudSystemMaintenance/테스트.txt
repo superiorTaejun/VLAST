@@ -1,0 +1,7 @@
+C:\Users\Bmo\AppData\Local\UnrealEngine\4.23\Saved\Config\WindowsEditor 폴더까지만 존재할 경우 O
+C:\Users\Bmo\AppData\Local\UnrealEngine\4.23\Saved\Config\WindowsEditor 폴더가 없을 경우 O
+C:\Users\Bmo\AppData\Local\UnrealEngine\4.23\Saved\Config\WindowsEditor\EditorSettings.ini 빈 ini파일이 존재할 경우 O
+C:\Users\Bmo\AppData\Local\UnrealEngine\4.23\Saved\Config\WindowsEditor\EditorSettings.ini ini파일에 [/Script/UnrealEd.EditorSettings] 섹션에 SharedDerivedDataCache 키가 존재할 경우 O
+C:\Users\Bmo\AppData\Local\UnrealEngine\4.23\Saved\Config\WindowsEditor\EditorSettings.ini ini파일에 [/Script/UnrealEd.EditorSettings] 섹션에 SharedDerivedDataCache 키가 존재하지만 값이 다른 경우 O
+C:\Users\Bmo\AppData\Local\UnrealEngine\4.23\Saved\Config\WindowsEditor\EditorSettings.ini ini파일에 [/Script/UnrealEd.EditorSettings] 섹션에 SharedDerivedDataCache 키가 없을 경우 O
+C:\Users\Bmo\AppData\Local\UnrealEngine\4.23\Saved\Config\WindowsEditor\EditorSettings.ini ini파일에 [/Script/UnrealEd.EditorSettings] 섹션에 SharedDerivedDataCache 키가 없을 때 두 번 실행한 경우 O

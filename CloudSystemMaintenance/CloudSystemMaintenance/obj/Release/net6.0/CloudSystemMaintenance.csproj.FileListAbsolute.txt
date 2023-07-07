@@ -1,0 +1,15 @@
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\bin\Release\net6.0\CloudSystemMaintenance.exe
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\bin\Release\net6.0\CloudSystemMaintenance.deps.json
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\bin\Release\net6.0\CloudSystemMaintenance.runtimeconfig.json
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\bin\Release\net6.0\CloudSystemMaintenance.dll
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\bin\Release\net6.0\CloudSystemMaintenance.pdb
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\obj\Release\net6.0\CloudSystemMaintenance.csproj.AssemblyReference.cache
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\obj\Release\net6.0\CloudSystemMaintenance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\obj\Release\net6.0\CloudSystemMaintenance.AssemblyInfoInputs.cache
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\obj\Release\net6.0\CloudSystemMaintenance.AssemblyInfo.cs
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\obj\Release\net6.0\CloudSystemMaintenance.csproj.CoreCompileInputs.cache
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\obj\Release\net6.0\CloudSystemMaintenance.dll
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\obj\Release\net6.0\refint\CloudSystemMaintenance.dll
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\obj\Release\net6.0\CloudSystemMaintenance.pdb
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\obj\Release\net6.0\CloudSystemMaintenance.genruntimeconfig.cache
+C:\Users\Bmo\Documents\github\VLAST\CloudSystemMaintenance\CloudSystemMaintenance\obj\Release\net6.0\ref\CloudSystemMaintenance.dll

@@ -1,0 +1,2 @@
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\bin\Release\net5.0\publish\win-x86\DSFS.pdb
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\bin\Release\net5.0\publish\win-x86\DSFS.exe

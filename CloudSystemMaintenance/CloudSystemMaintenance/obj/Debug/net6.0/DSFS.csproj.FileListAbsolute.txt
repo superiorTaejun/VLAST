@@ -1,0 +1,15 @@
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\bin\Debug\net6.0\DSFS.exe
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\bin\Debug\net6.0\DSFS.deps.json
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\bin\Debug\net6.0\DSFS.runtimeconfig.json
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\bin\Debug\net6.0\DSFS.dll
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\bin\Debug\net6.0\DSFS.pdb
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\obj\Debug\net6.0\DSFS.csproj.AssemblyReference.cache
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\obj\Debug\net6.0\DSFS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\obj\Debug\net6.0\DSFS.AssemblyInfoInputs.cache
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\obj\Debug\net6.0\DSFS.AssemblyInfo.cs
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\obj\Debug\net6.0\DSFS.csproj.CoreCompileInputs.cache
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\obj\Debug\net6.0\DSFS.dll
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\obj\Debug\net6.0\refint\DSFS.dll
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\obj\Debug\net6.0\DSFS.pdb
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\obj\Debug\net6.0\DSFS.genruntimeconfig.cache
+C:\Users\Bmo\Documents\github\VLAST\DataSourceFolderSetter\DSFS\obj\Debug\net6.0\ref\DSFS.dll
